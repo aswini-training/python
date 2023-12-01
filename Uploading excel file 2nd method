@@ -1,0 +1,104 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "mount_file_id": "1nCvaQ5adVCZGy-g8NKo25RMQnroGbkuR",
+      "authorship_tag": "ABX9TyPVZkhTFVhHjY1V7CSYPAsF",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aswini-training/python/blob/main/Uploading%20excel%20file%202nd%20method\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "id": "a4a_YELC5IC6"
+      },
+      "outputs": [],
+      "source": [
+        "import pandas as pd"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "path=\"/content/drive/MyDrive/Colab Notebooks/Student Mark.xlsx\"\n",
+        "df=pd.read_excel(path)\n",
+        "print(df)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_3J_cyn45Wrc",
+        "outputId": "925a1986-58de-43be-b595-da26d7efeda8"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "    S.No.      Name  Eng  Math  Soc  Computer Science\n",
+            "0       1     Karan   88    98   29                48\n",
+            "1       2     Aleen   53    61   75               100\n",
+            "2       3   Micheal   73    48   72                98\n",
+            "3       4      Tara   81    50   96                78\n",
+            "4       5  Pavithra   91    72   73                29\n",
+            "..    ...       ...  ...   ...  ...               ...\n",
+            "59     60     Jamie   41    58   70                52\n",
+            "60     61   Gilbert   68    41   52                59\n",
+            "61     62      Tori   35   100   61                76\n",
+            "62     63      Joey   30    76   59                70\n",
+            "63     64     Irene   99    76   68                99\n",
+            "\n",
+            "[64 rows x 6 columns]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount(\"/content/drive\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_Ln_Wspb6bAJ",
+        "outputId": "0f805a0a-37ea-4a2e-a2e8-678eb3d5ba76"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(\"/content/drive\", force_remount=True).\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
